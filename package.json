@@ -2,7 +2,7 @@
   "name": "@uniswap/interface",
   "version": "1.0.7",
   "description": "Uniswap Interface",
-  "homepage": ".",
+  "homepage": "https://apuyue.github.io/puyueswap/",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "contracts:compile:abi": "typechain --target ethers-v5 --out-dir src/abis/types \"./src/abis/**/*.json\"",
@@ -20,7 +20,8 @@
     "lint": "yarn eslint .",
     "test": "craco test --coverage",
     "cypress:open": "cypress open --browser chrome --e2e",
-    "cypress:run": "cypress run --browser chrome --e2e"
+    "cypress:run": "cypress run --browser chrome --e2e",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
